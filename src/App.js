@@ -69,7 +69,7 @@ let SendSecretEmail = function () {
   const onSubmit = async (data) => {
     data.randomKey = key.toString();
 
-    data.targetUrl = "http://localhost:3000/retrieveMessage";
+    data.targetUrl = "https://secret-fe.herokuapp.com/retrieveMessage";
     alert(JSON.stringify(data));
     try {
       await api
